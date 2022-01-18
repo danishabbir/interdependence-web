@@ -78,17 +78,6 @@ export default function SignatureEconomies() {
           This confusion reveals how ‘ownership’ is shifting and highlights the opportunity we have not to implement an ‘ownership economy’, but to reimagine what being an owner means.
           </p>
 
-
-        <button 
-        onClick={getSelectedText()}
-               value="Get Selection"> Get Select  </button>
-      
-        <form name="testform">
-            <textarea name="selectedtext" 
-                      rows="5"
-                      cols="20"></textarea>
-        </form>
-
           <p style={{'text-indent': '2rem'}}>
           We can begin this process by asking, “What do I actually control?”
           </p>
@@ -272,11 +261,11 @@ export default function SignatureEconomies() {
     
     </div>
     <footer className="py-10 font-mono text-center text-sm text-gray-600 items-center"> 
-       <a 
+       {/* <a 
         href={"/declaration"}
         className="px-2 border-purple-2004 border-b-2 rounded-xl"> 
-          (Planted on the Permaweb. ☘️. Oct 31, 2021.)
-       </a>
+          (Planted on the Permaweb. ☘️. Feb 09, 2022.)
+       </a> */}
       <div className="mt-10 
         px-20
         flex flex-col items-center 
