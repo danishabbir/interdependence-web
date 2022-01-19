@@ -1,13 +1,9 @@
 import HeadComponent from "../components/Head";
-import Highlightable from 'highlightable';
-import Tooltip from 'rc-tooltip';
 import React, { Fragment, useRef, useState } from 'react'
 import HighlightPop from 'react-highlight-pop';
 
 
-//import Button from '../components/core/Button';
-
-// Function to get the Selected Text 
+// All the ways to get the Selected Text 
 function getSelectedText() {
     var selectedText = '';
     if (typeof window !== "undefined") {
@@ -79,7 +75,6 @@ export default function SignatureEconomies() {
         >
 
           {/* <h2 className="pt-10 font-bold text-2xl text-title"> Signature Economies </h2> */}
-          <template><span className="w-4 h-2 bg-blue-200" id="control"></span></template>
           <p style={{'text-indent': '2rem'}}>
           Public blockchains present a paradox of ownership. 
           No-one controls them and anyone can use them, given a connection and an ability to speak the common tongue. 
