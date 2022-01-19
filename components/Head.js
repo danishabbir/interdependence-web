@@ -11,10 +11,10 @@ export default function HeadComponent() {
       ✍️ 
       </text></svg>"/>
 
-    <meta property="og:title" content="A Declaration of the Interdependence of Cyberspace"/>
+    <meta property="og:title" content="Signature Economies"/>
 
     <meta property="og:description" 
-      content="Collectively authored and backed by the citizens of the Pluriverse"/>
+      content="Ownership and NFTs"/>
 
     <meta property="og:image" content="https://res.cloudinary.com/djp21wtxm/image/upload/v1635801698/fczrixfn4krjqmjf3vld.png" />
 

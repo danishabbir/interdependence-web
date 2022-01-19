@@ -1,4 +1,10 @@
 import HeadComponent from "../components/Head";
+import Highlightable from 'highlightable';
+import Tooltip from 'rc-tooltip';
+import React, { Fragment, useRef, useState } from 'react'
+import HighlightPop from 'react-highlight-pop';
+
+
 //import Button from '../components/core/Button';
 
 // Function to get the Selected Text 
@@ -46,14 +52,17 @@ export default function SignatureEconomies() {
             <div className="hidden sm:block flex-1">
             </div>
             <div className="flex-0 w-full flex justify-center sm:justify-end">
-              {/* <Button>
-                <a className="font-mono"
-                  href="/declaration"
-                  >
-                    Declaration →</a>
-              </Button> */}
             </div>
           </div>
+        <HighlightPop 
+        popoverItems={itemClass => (
+             <Fragment>
+                <span 
+                    className={itemClass} onClick={() => alert(window.getSelection())}>
+                      🍀 Mint
+                </span>
+             </Fragment>
+            )}>>
         <h2 className="mt-20 text-3xl font-title w-full font-bold px-20 text-center">
           Signature Economies
         </h2>
@@ -70,13 +79,14 @@ export default function SignatureEconomies() {
         >
 
           {/* <h2 className="pt-10 font-bold text-2xl text-title"> Signature Economies </h2> */}
-          
+          <template><span className="w-4 h-2 bg-blue-200" id="control"></span></template>
           <p style={{'text-indent': '2rem'}}>
           Public blockchains present a paradox of ownership. 
           No-one controls them and anyone can use them, given a connection and an ability to speak the common tongue. 
           The network is ownerless, yet anyone who creates a key ‘owns’ any coins associated with it, so everyone is an owner. 
           This confusion reveals how ‘ownership’ is shifting and highlights the opportunity we have not to implement an ‘ownership economy’, but to reimagine what being an owner means.
           </p>
+
 
           <p style={{'text-indent': '2rem'}}>
           We can begin this process by asking, “What do I actually control?”
@@ -257,6 +267,7 @@ export default function SignatureEconomies() {
           my soul. 
           </p>
         </div>
+        </HighlightPop>
       </div>
     
     </div>
